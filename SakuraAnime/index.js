@@ -1,23 +1,17 @@
-export default () => ({
-  onInstall: () => {
-    console.log('installed')
+module.exports = () => ({
+  onLoad() {
+    // console.log('load')
   },
-  onRemove: () => {
-    console.log('removed')
+  onReload() {
+    // console.log('reload')
   },
-  onLoad: () => {
-    console.log('load')
+  onError() {
+    // console.warn(err)
   },
-  onReload: () => {
-    console.log('reload')
+  async onSearch(keyword) {
+    return []
   },
-  onError: (err) => {
-    console.warn(err)
-  },
-  onSearch: (keyword) => {
-    console.log('search', keyword)
-  },
-  onGetEpisod: (mid) => {
-    console.log('get episod', mid)
-  },
+  async onGetEpisod(mid) {
+    return []
+  }
 })
