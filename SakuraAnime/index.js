@@ -1,8 +1,4 @@
 export default () => ({
-  name: 'SakuraAnime',
-  pid: '78a34f3c-00f0-11ed-b939-0242ac120002',
-  description: 'Plugin for the site of Sakura Anime',
-  version: 'test',
   onInstall: () => {
     console.log('installed')
   },
